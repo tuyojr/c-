@@ -76,45 +76,68 @@ namespace cSharp
             //Console.WriteLine("The sum is " + (num1 + num2));
 
 
-            //5. Building a Mad Libs Game
+            ////5. Building a Mad Libs Game
 
-            string verb_ed, verb, noun_body_part, noun, adjective,
-                noun_beverage, noun_something_gross;
+            //string verb_ed, verb, noun_body_part, noun, adjective,
+            //    noun_beverage, noun_something_gross;
 
-            Console.Write("Enter a verb ending in -ed: ");
-            verb_ed = Console.ReadLine();
+            //Console.Write("Enter a verb ending in -ed: ");
+            //verb_ed = Console.ReadLine();
 
-            Console.Write("Enter a verb: ");
-            verb = Console.ReadLine();
+            //Console.Write("Enter a verb: ");
+            //verb = Console.ReadLine();
 
-            Console.Write("Enter a noun(body part): ");
-            noun_body_part = Console.ReadLine();
+            //Console.Write("Enter a noun(body part): ");
+            //noun_body_part = Console.ReadLine();
 
-            Console.Write("Enter a noun: ");
-            noun = Console.ReadLine();
+            //Console.Write("Enter a noun: ");
+            //noun = Console.ReadLine();
 
-            Console.Write("Enter an adjective: ");
-            adjective = Console.ReadLine();
+            //Console.Write("Enter an adjective: ");
+            //adjective = Console.ReadLine();
 
-            Console.Write("Enter a noun(beverage): ");
-            noun_beverage = Console.ReadLine();
+            //Console.Write("Enter a noun(beverage): ");
+            //noun_beverage = Console.ReadLine();
 
-            Console.Write("Enter a noun(something gross): ");
-            noun_something_gross = Console.ReadLine();
+            //Console.Write("Enter a noun(something gross): ");
+            //noun_something_gross = Console.ReadLine();
 
-            Console.WriteLine(
-                
-               "If zombies " + verb_ed + " a picnic, what would they "
-               + verb + " to eat? Everybody knows zombies love to " +
-               verb + " " + noun_body_part + ", but did you know they also enjoy "
-               + noun_body_part + " and even " + noun_body_part + "? The best "
-               + noun + " for a zombie picnic is when the moon is " + adjective +
-               ". At least one zombie will bring " + noun_beverage + " to drink, and it is not a picnic without "
-               + noun_body_part + " with extra " + noun_something_gross
-               + " on top. After eating, zombies will " + verb + adjective
-               + " games like kick the " + noun_body_part + " and "
-               + noun_body_part + " toss."
-            );
+            //Console.WriteLine(
+
+            //   "If zombies " + verb_ed + " a picnic, what would they "
+            //   + verb + " to eat? Everybody knows zombies love to " +
+            //   verb + " " + noun_body_part + ", but did you know they also enjoy "
+            //   + noun_body_part + " and even " + noun_body_part + "? The best "
+            //   + noun + " for a zombie picnic is when the moon is " + adjective +
+            //   ". At least one zombie will bring " + noun_beverage + " to drink, and it is not a picnic without "
+            //   + noun_body_part + " with extra " + noun_something_gross
+            //   + " on top. After eating, zombies will " + verb + adjective
+            //   + " games like kick the " + noun_body_part + " and "
+            //   + noun_body_part + " toss."
+            //);
+
+
+
+            //6. Arrays
+
+            int[] arr = { 2, 4, 6, 8, 10, 12, 14};
+            //update an element in the array
+            arr[0] = 16;
+
+            string[] topArtists = new string[10];
+            topArtists[0] = "J. Cole";
+            topArtists[1] = "Dave";
+            topArtists[2] = "Cordae";
+            topArtists[3] = "Juice Wrld";
+            topArtists[4] = "XXXTENTACION";
+            topArtists[5] = "2pac";
+            topArtists[6] = "The Notorious B.I.G.";
+            topArtists[7] = "Drake";
+            topArtists[8] = "Masego";
+            topArtists[9] = "Aaron May";
+
+            Console.WriteLine(arr[0]);
+            Console.WriteLine(topArtists[5]);
 
 
 
