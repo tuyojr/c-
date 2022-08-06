@@ -46,17 +46,34 @@ namespace cSharp
 
 
 
-            //3. Getting User Input
-            //Console.WriteLine(); prints a line of text and then goes to a new line
-            //Console.ReaLine(); takes the line of text the user enters and saves it as a string
-            
-            
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.Write("Enter your age: ");
-            string age = Console.ReadLine();
-            Console.WriteLine("Hello " + name + ", you are " + age + "years old.");
+            ////3. Getting User Input
+            ////Console.WriteLine(); prints a line of text and then goes to a new line
+            ////Console.ReaLine(); takes the line of text the user enters and saves it as a string
 
+
+            //Console.Write("Enter your name: ");
+            //string name = Console.ReadLine();
+            //Console.Write("Enter your age: ");
+            //string age = Console.ReadLine();
+            //Console.WriteLine("Hello " + name + ", you are " + age + "years old.");
+
+
+
+            //4. Building a calculator
+
+            ////for inetgers
+            //Console.Write("Enter a number: ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter a second number: ");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+
+            //for decimals
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a second number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("The sum is " + (num1 + num2));
 
 
 
