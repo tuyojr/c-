@@ -118,26 +118,33 @@ namespace cSharp
 
 
 
-            //6. Arrays
+            ////6. Arrays
 
-            int[] arr = { 2, 4, 6, 8, 10, 12, 14};
-            //update an element in the array
-            arr[0] = 16;
+            //int[] arr = { 2, 4, 6, 8, 10, 12, 14};
+            ////update an element in the array
+            //arr[0] = 16;
 
-            string[] topArtists = new string[10];
-            topArtists[0] = "J. Cole";
-            topArtists[1] = "Dave";
-            topArtists[2] = "Cordae";
-            topArtists[3] = "Juice Wrld";
-            topArtists[4] = "XXXTENTACION";
-            topArtists[5] = "2pac";
-            topArtists[6] = "The Notorious B.I.G.";
-            topArtists[7] = "Drake";
-            topArtists[8] = "Masego";
-            topArtists[9] = "Aaron May";
+            //string[] topArtists = new string[10];
+            //topArtists[0] = "J. Cole";
+            //topArtists[1] = "Dave";
+            //topArtists[2] = "Cordae";
+            //topArtists[3] = "Juice Wrld";
+            //topArtists[4] = "XXXTENTACION";
+            //topArtists[5] = "2pac";
+            //topArtists[6] = "The Notorious B.I.G.";
+            //topArtists[7] = "Drake";
+            //topArtists[8] = "Masego";
+            //topArtists[9] = "Aaron May";
 
-            Console.WriteLine(arr[0]);
-            Console.WriteLine(topArtists[5]);
+            //Console.WriteLine(arr[0]);
+            //Console.WriteLine(topArtists[5]);
+
+
+            //7. Methods
+
+
+
+
 
 
 
