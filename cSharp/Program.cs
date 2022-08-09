@@ -139,10 +139,12 @@ namespace cSharp
             //Console.WriteLine(arr[0]);
             //Console.WriteLine(topArtists[5]);
 
-
             //7. Methods
+            //Call the method created outside Main
 
-
+            SayHi("Jermaine", 37);
+            SayHi("Pac", 51);
+            SayHi("Cordae", 24);
 
 
 
@@ -150,5 +152,13 @@ namespace cSharp
 
             Console.ReadLine();
         }
+
+        //7. Methods
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + "! Whoa! you're " + age + "years old? Cool!");
+        }
+
     }
 }
