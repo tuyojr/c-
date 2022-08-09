@@ -229,20 +229,34 @@ namespace cSharp
             //}
 
 
-            //12. Switch Statements
+            ////12. Switch Statements
 
-            Console.WriteLine(DayOfWeek(0));
-            Console.WriteLine(DayOfWeek(1));
-            Console.WriteLine(DayOfWeek(2));
-            Console.WriteLine(DayOfWeek(3));
-            Console.WriteLine(DayOfWeek(4));
-            Console.WriteLine(DayOfWeek(5));
-            Console.WriteLine(DayOfWeek(6));
-            Console.WriteLine(DayOfWeek(16));
-
-
+            //Console.WriteLine(DayOfWeek(0));
+            //Console.WriteLine(DayOfWeek(1));
+            //Console.WriteLine(DayOfWeek(2));
+            //Console.WriteLine(DayOfWeek(3));
+            //Console.WriteLine(DayOfWeek(4));
+            //Console.WriteLine(DayOfWeek(5));
+            //Console.WriteLine(DayOfWeek(6));
+            //Console.WriteLine(DayOfWeek(16));
 
 
+
+            //13. While loops
+
+            int num = 1;
+            //the code keeps executing until the condition is false
+            while (num <= 10)
+            {
+                Console.WriteLine(num);
+                num++;
+            }
+            ////do...while loop
+            //do
+            //{
+            //    Console.WriteLine(num);
+            //    num++;
+            //} while (num <= 10);
 
 
 
@@ -298,43 +312,43 @@ namespace cSharp
 
         //12. Switch Statements
 
-        static string DayOfWeek (int dayNum)
-        {
-            string dayName;
+        //static string DayOfWeek (int dayNum)
+        //{
+        //    string dayName;
 
-            switch (dayNum)
-            {
-                //in the case that dayNum is 0 (...to the last case 6), do dayNum = "Sunday".
-                //the break statement helps us get out of the structure we're in.
-                case 0:
-                    dayName = "Sunday";
-                    break;
-                case 1:
-                    dayName = "Monday";
-                    break;
-                case 2:
-                    dayName = "Tuesday";
-                    break;
-                case 3:
-                    dayName = "Wednesday";
-                    break;
-                case 4:
-                    dayName = "Thursday";
-                    break;
-                case 5:
-                    dayName = "Friday";
-                    break;
-                case 6:
-                    dayName = "Saturday";
-                    break;
-                default:
-                    dayName = "Invalid day of the week number.";
-                    break;
-            }
+        //    switch (dayNum)
+        //    {
+        //        //in the case that dayNum is 0 (...to the last case 6), do dayNum = "Sunday".
+        //        //the break statement helps us get out of the structure we're in.
+        //        case 0:
+        //            dayName = "Sunday";
+        //            break;
+        //        case 1:
+        //            dayName = "Monday";
+        //            break;
+        //        case 2:
+        //            dayName = "Tuesday";
+        //            break;
+        //        case 3:
+        //            dayName = "Wednesday";
+        //            break;
+        //        case 4:
+        //            dayName = "Thursday";
+        //            break;
+        //        case 5:
+        //            dayName = "Friday";
+        //            break;
+        //        case 6:
+        //            dayName = "Saturday";
+        //            break;
+        //        default:
+        //            dayName = "Invalid day of the week number.";
+        //            break;
+        //    }
 
 
-            return dayName;
-        }
+        //    return dayName;
+        //}
 
     }
 }
