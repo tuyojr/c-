@@ -197,36 +197,48 @@ namespace cSharp
             //Console.WriteLine(MaxNum(3, 17, 11));
 
 
-            //11. Buliding a better calculator
+            ////11. Buliding a better calculator
 
-            Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter a number: ");
+            //double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter an operator: ");
-            string oprtr = Console.ReadLine();
-            
-            Console.Write("Enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            
-            if (oprtr == "+")
-            {
-                Console.WriteLine(num1 + num2);
-            } else if (oprtr == "-")
-            {
-                Console.WriteLine(num1 - num2);
-            } else if (oprtr == "*")
-            {
-                Console.WriteLine(num1 * num2);
-            } else if (oprtr == "/")
-            {
-                Console.WriteLine(num1 / num2);
-            } else if (oprtr == "%")
-            {
-                Console.WriteLine(num1 % num2);
-            } else
-            {
-                Console.WriteLine("Please enter a valid operator.");
-            }
+            //Console.Write("Enter an operator: ");
+            //string oprtr = Console.ReadLine();
+
+            //Console.Write("Enter another number: ");
+            //double num2 = Convert.ToDouble(Console.ReadLine());
+
+            //if (oprtr == "+")
+            //{
+            //    Console.WriteLine(num1 + num2);
+            //} else if (oprtr == "-")
+            //{
+            //    Console.WriteLine(num1 - num2);
+            //} else if (oprtr == "*")
+            //{
+            //    Console.WriteLine(num1 * num2);
+            //} else if (oprtr == "/")
+            //{
+            //    Console.WriteLine(num1 / num2);
+            //} else if (oprtr == "%")
+            //{
+            //    Console.WriteLine(num1 % num2);
+            //} else
+            //{
+            //    Console.WriteLine("Please enter a valid operator.");
+            //}
+
+
+            //12. Switch Statements
+
+            Console.WriteLine(DayOfWeek(0));
+            Console.WriteLine(DayOfWeek(1));
+            Console.WriteLine(DayOfWeek(2));
+            Console.WriteLine(DayOfWeek(3));
+            Console.WriteLine(DayOfWeek(4));
+            Console.WriteLine(DayOfWeek(5));
+            Console.WriteLine(DayOfWeek(6));
+            Console.WriteLine(DayOfWeek(16));
 
 
 
@@ -282,6 +294,47 @@ namespace cSharp
 
         //    return result;
         //}
+
+
+        //12. Switch Statements
+
+        static string DayOfWeek (int dayNum)
+        {
+            string dayName;
+
+            switch (dayNum)
+            {
+                //in the case that dayNum is 0 (...to the last case 6), do dayNum = "Sunday".
+                //the break statement helps us get out of the structure we're in.
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid day of the week number.";
+                    break;
+            }
+
+
+            return dayName;
+        }
 
     }
 }
