@@ -146,13 +146,50 @@ namespace cSharp
             //SayHi("Pac", 51);
             //SayHi("Cordae", 24);
 
-            //8. Return statement 
+            ////8. Return statement 
 
-            int cubed = Cube(16);
+            //int cubed = Cube(16);
 
-            Console.WriteLine(Cube(8));
-            Console.WriteLine(cubed);
+            //Console.WriteLine(Cube(8));
+            //Console.WriteLine(cubed);
 
+
+            //9. If Statements
+
+            bool genderM = true;
+            //if it is false, nothing is printed.
+            //else statement is used to print something when the condition is false.
+
+            bool heightTall = true;
+
+            //&& - both conditions have to be true.
+            //|| - one of the condition has to be true.
+
+            if (genderM && heightTall)
+            //M=true, Tall=true
+            //male and tall
+            {
+                Console.WriteLine("This person is a tall Male.");
+            }
+            else if (genderM && !heightTall)
+            //M=true, Tall=false
+            //male and not tall.
+            //if heigthTall was true, the ! would make it false and vice versa
+            {
+                Console.WriteLine("This person is a Male that's not tall.");
+            }
+            else if (!genderM && heightTall)
+            //M=false, Tall=true
+            //not male, but tall.
+            {
+                Console.WriteLine("This person is not a male, but tall.");
+            }
+            else
+            //M=false, Tall=false
+            //neither male nor tall.
+            {
+                Console.WriteLine("This person is either not tall or not a Male or both.");
+            }
            
 
 
@@ -169,14 +206,14 @@ namespace cSharp
         //    Console.WriteLine("Hello " + name + "! Whoa! you're " + age + "years old? Cool!");
         //}
 
-        //8. Return statement
+        ////8. Return statement
 
-        static int Cube(int x)
-            //you can also return "string" "double" "double[]" etc.
-        {
-            int result = x * x * x;
-            return result;
-        }
+        //static int Cube(int x)
+        //    //you can also return "string" "double" "double[]" etc.
+        //{
+        //    int result = x * x * x;
+        //    return result;
+        //}
 
     }
 }
