@@ -154,43 +154,52 @@ namespace cSharp
             //Console.WriteLine(cubed);
 
 
-            //9. If Statements
+            ////9. If Statements
 
-            bool genderM = true;
-            //if it is false, nothing is printed.
-            //else statement is used to print something when the condition is false.
+            //bool genderM = true;
+            ////if it is false, nothing is printed.
+            ////else statement is used to print something when the condition is false.
 
-            bool heightTall = true;
+            //bool heightTall = true;
 
-            //&& - both conditions have to be true.
-            //|| - one of the condition has to be true.
+            ////&& - both conditions have to be true.
+            ////|| - one of the condition has to be true.
 
-            if (genderM && heightTall)
-            //M=true, Tall=true
-            //male and tall
-            {
-                Console.WriteLine("This person is a tall Male.");
-            }
-            else if (genderM && !heightTall)
-            //M=true, Tall=false
-            //male and not tall.
-            //if heigthTall was true, the ! would make it false and vice versa
-            {
-                Console.WriteLine("This person is a Male that's not tall.");
-            }
-            else if (!genderM && heightTall)
-            //M=false, Tall=true
-            //not male, but tall.
-            {
-                Console.WriteLine("This person is not a male, but tall.");
-            }
-            else
-            //M=false, Tall=false
-            //neither male nor tall.
-            {
-                Console.WriteLine("This person is either not tall or not a Male or both.");
-            }
-           
+            //if (genderM && heightTall)
+            ////M=true, Tall=true
+            ////male and tall
+            //{
+            //    Console.WriteLine("This person is a tall Male.");
+            //}
+            //else if (genderM && !heightTall)
+            ////M=true, Tall=false
+            ////male and not tall.
+            ////if heigthTall was true, the ! would make it false and vice versa
+            //{
+            //    Console.WriteLine("This person is a Male that's not tall.");
+            //}
+            //else if (!genderM && heightTall)
+            ////M=false, Tall=true
+            ////not male, but tall.
+            //{
+            //    Console.WriteLine("This person is not a male, but tall.");
+            //}
+            //else
+            ////M=false, Tall=false
+            ////neither male nor tall.
+            //{
+            //    Console.WriteLine("This person is either not tall or not a Male or both.");
+            //}
+
+
+            //10. Comparisons in if statements
+
+            Console.WriteLine(MaxNum(3, 17, 11));
+            
+
+
+
+
 
 
 
@@ -214,6 +223,34 @@ namespace cSharp
         //    int result = x * x * x;
         //    return result;
         //}
+
+        //10. Comparisons in if statements
+
+        static int MaxNum(int num1, int num2, int num3)
+        {
+            int result;
+            //if (num1 > num2)
+            //// > comparison resolves down to a true or false
+            //{
+            //    result = num1;
+            //} else
+            //{
+            //    result = num2;
+            //}
+
+            if (num1 >= num2 && num1 >= num3)
+            {
+                result = num1;
+            } else if (num2 >= num1 && num2 >= num3)
+            {
+                return num2;
+            } else
+            {
+                result = num3;
+            }
+
+            return result;
+        }
 
     }
 }
