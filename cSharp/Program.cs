@@ -172,6 +172,7 @@ namespace cSharp
         //8. Return statement
 
         static int Cube(int x)
+            //you can also return "string" "double" "double[]" etc.
         {
             int result = x * x * x;
             return result;
