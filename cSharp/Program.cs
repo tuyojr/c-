@@ -139,12 +139,21 @@ namespace cSharp
             //Console.WriteLine(arr[0]);
             //Console.WriteLine(topArtists[5]);
 
-            //7. Methods
-            //Call the method created outside Main
+            ////7. Methods
+            ////Call the method created outside Main
 
-            SayHi("Jermaine", 37);
-            SayHi("Pac", 51);
-            SayHi("Cordae", 24);
+            //SayHi("Jermaine", 37);
+            //SayHi("Pac", 51);
+            //SayHi("Cordae", 24);
+
+            //8. Return statement 
+
+            int cubed = Cube(16);
+
+            Console.WriteLine(Cube(8));
+            Console.WriteLine(cubed);
+
+           
 
 
 
@@ -153,11 +162,19 @@ namespace cSharp
             Console.ReadLine();
         }
 
-        //7. Methods
+        ////7. Methods
 
-        static void SayHi(string name, int age)
+        //static void SayHi(string name, int age)
+        //{
+        //    Console.WriteLine("Hello " + name + "! Whoa! you're " + age + "years old? Cool!");
+        //}
+
+        //8. Return statement
+
+        static int Cube(int x)
         {
-            Console.WriteLine("Hello " + name + "! Whoa! you're " + age + "years old? Cool!");
+            int result = x * x * x;
+            return result;
         }
 
     }
