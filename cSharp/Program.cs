@@ -192,10 +192,41 @@ namespace cSharp
             //}
 
 
-            //10. Comparisons in if statements
+            ////10. Comparisons in if statements
 
-            Console.WriteLine(MaxNum(3, 17, 11));
+            //Console.WriteLine(MaxNum(3, 17, 11));
+
+
+            //11. Buliding a better calculator
+
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter an operator: ");
+            string oprtr = Console.ReadLine();
             
+            Console.Write("Enter another number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            
+            if (oprtr == "+")
+            {
+                Console.WriteLine(num1 + num2);
+            } else if (oprtr == "-")
+            {
+                Console.WriteLine(num1 - num2);
+            } else if (oprtr == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            } else if (oprtr == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            } else if (oprtr == "%")
+            {
+                Console.WriteLine(num1 % num2);
+            } else
+            {
+                Console.WriteLine("Please enter a valid operator.");
+            }
 
 
 
@@ -226,31 +257,31 @@ namespace cSharp
 
         //10. Comparisons in if statements
 
-        static int MaxNum(int num1, int num2, int num3)
-        {
-            int result;
-            //if (num1 > num2)
-            //// > comparison resolves down to a true or false
-            //{
-            //    result = num1;
-            //} else
-            //{
-            //    result = num2;
-            //}
+        //static int MaxNum(int num1, int num2, int num3)
+        //{
+        //    int result;
+        //    //if (num1 > num2)
+        //    //// > comparison resolves down to a true or false
+        //    //{
+        //    //    result = num1;
+        //    //} else
+        //    //{
+        //    //    result = num2;
+        //    //}
 
-            if (num1 >= num2 && num1 >= num3)
-            {
-                result = num1;
-            } else if (num2 >= num1 && num2 >= num3)
-            {
-                return num2;
-            } else
-            {
-                result = num3;
-            }
+        //    if (num1 >= num2 && num1 >= num3)
+        //    {
+        //        result = num1;
+        //    } else if (num2 >= num1 && num2 >= num3)
+        //    {
+        //        return num2;
+        //    } else
+        //    {
+        //        result = num3;
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
 
     }
 }
