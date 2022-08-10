@@ -412,27 +412,39 @@ namespace cSharp
             ////{
 
             ////}
+
+
+            ////20. Classes and Objects
+
+            ////an object is an instance of a class...
+            ////object is creating the book inside our program
+            ////you can create as many objects as you want
+
+            //Book book1 = new Book();
+            //book1.Title = "2014 Forest Hills Drive";
+            //book1.Author = "J.Cole";
+            //book1.Pages = 13;
+
+            //Book book2 = new Book();
+            //book2.Title = "From A Bird\'s Eye View";
+            //book2.Author = "Cordae";
+            //book2.Pages = 14;
+
+            //Console.WriteLine(book2.Title);
+
+
+            //21. Constructors
+
+            Book book1 = new Book("2014 Forest Hills Drive", "J.Cole", 13); //this calls the constructor method
             
+            Book book2 = new Book("From A Bird\'s Eye View", "Cordae", 14);
 
-            //20. Classes and Objects
-
-            //an object is an instance of a class...
-            //object is creating the book inside our program
-            //you can create as many objects as you want
-
-            Book book1 = new Book();
-            book1.Title = "2014 Forest Hills Drive";
-            book1.Author = "J.Cole";
-            book1.Pages = 13;
-
-            Book book2 = new Book();
-            book2.Title = "From A Bird\'s Eye View";
-            book2.Author = "Cordae";
-            book2.Pages = 14;
+            //You can modify the values
+            book1.Pages = 14;
 
             Console.WriteLine(book2.Title);
-
-
+            Console.WriteLine(book1.Title);
+            Console.WriteLine(book1.Pages); //the number of pages changes from 13 to 14
 
 
 
