@@ -447,23 +447,39 @@ namespace cSharp
             //Console.WriteLine(book1.Pages); //the number of pages changes from 13 to 14
 
 
-            //22. Object Methods
+            ////22. Object Methods
 
-            //we want to figure out if any of these students is on the honor roll
-            //we create an object method in our class
+            ////we want to figure out if any of these students is on the honor roll
+            ////we create an object method in our class
 
-            Student student1 = new Student("Alade", "Frontend Development.", 4.8);
-            Student student2 = new Student("Luchesse", "Data Analysis.", 2.8);
-            Student student3 = new Student("Sherlock", "Backend Development.", 4.9);
-            Student student4 = new Student("Donnie", "UI and UX.", 3.2);
-            Student student5 = new Student("Tuyo", "Cloud Engineering and Game Design.", 4.7);
+            //Student student1 = new Student("Alade", "Frontend Development.", 4.8);
+            //Student student2 = new Student("Luchesse", "Data Analysis.", 2.8);
+            //Student student3 = new Student("Sherlock", "Backend Development.", 4.9);
+            //Student student4 = new Student("Donnie", "UI and UX.", 3.2);
+            //Student student5 = new Student("Tuyo", "Cloud Engineering and Game Design.", 4.7);
 
 
-            Console.WriteLine(student1.Honors());
-            Console.WriteLine(student2.Honors());
-            Console.WriteLine(student3.Honors());
-            Console.WriteLine(student4.Honors());
-            Console.WriteLine(student5.Honors());
+            //Console.WriteLine(student1.Honors());
+            //Console.WriteLine(student2.Honors());
+            //Console.WriteLine(student3.Honors());
+            //Console.WriteLine(student4.Honors());
+            //Console.WriteLine(student5.Honors());
+
+
+
+            //23. Getters and Setters
+
+            //Ratings G, PG, PG-13, R, NR
+
+            Movies movie1 = new Movies("Avengers: Infinity War", "Marvel", "G");
+            Movies movie2 = new Movies("Avengers: Endgame", "Marvel", "PG");
+ 
+            Console.WriteLine(movie1.Rating);
+
+
+
+
+
 
 
 
