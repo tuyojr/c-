@@ -356,22 +356,31 @@ namespace cSharp
             //Console.WriteLine(Pow(2, 3));
 
 
-            //17. 2D Arrays
+            ////17. 2D Arrays
 
-            int[,] twoDarr = {
-                { 1, 3 },
-                { 2, 4 }
-            };
+            //int[,] twoDarr = {
+            //    { 1, 3 },
+            //    { 2, 4 }
+            //};
 
+            ///*
+            //in a situation you dont know how many values you want to populate the array with
+            //you can write it as:
+            //*/
+
+            ////int[,] arr = new int[3, 4]; // new int[rows, columns]
+
+            //Console.WriteLine(twoDarr[1,1]);
+
+
+            //18. Comments
+
+            //Comments are ignored by the computer
+            //You can easily add a single line comment with this forwardslash.
             /*
-            in a situation you dont know how many values you want to populate the array with
-            you can write it as:
+            or you can wirte a double line comment
+            just like this.
             */
-
-            //int[,] arr = new int[3, 4]; // new int[rows, columns]
-
-            Console.WriteLine(twoDarr[1,1]);
-
 
 
 
