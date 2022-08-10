@@ -323,34 +323,37 @@ namespace cSharp
             //}
 
 
-            //15. For Loops
+            ////15. For Loops
 
-            ////int i = 1;
+            //////int i = 1;
 
-            ////while (i <= 5)
+            //////while (i <= 5)
+            //////{
+            //////    Console.WriteLine(i);
+            //////    i++;
+            //////}
+
+            /////*
+            //// the for loop will contain the
+            ////- variable initialization
+            ////- the condition
+            ////-increment or decrement
+            //// */
+            ////for (int i = 1; i <= 5; i++)
             ////{
             ////    Console.WriteLine(i);
-            ////    i++;
             ////}
+            //int[] nums = { 2, 4, 6, 8, 10, 12, 14, 16 };
 
-            ///*
-            // the for loop will contain the
-            //- variable initialization
-            //- the condition
-            //-increment or decrement
-            // */
-            //for (int i = 1; i <= 5; i++)
+            //for (int i = 0; i < nums.Length; i++)
             //{
-            //    Console.WriteLine(i);
+            //    Console.WriteLine(nums[i]);
             //}
-            int[] nums = { 2, 4, 6, 8, 10, 12, 14, 16 };
-
-            for (int i = 0; i < nums.Length; i++)
-            {
-                Console.WriteLine(nums[i]);
-            }
 
 
+            //16. Building an Exponent Method
+
+            Console.WriteLine(Pow(2, 3));
 
 
 
@@ -443,5 +446,19 @@ namespace cSharp
         //    return dayName;
         //}
 
+
+        //16. Building an Exponent Method
+
+        static int Pow (int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for (int i = 0; i < powNum; i++)
+            {
+                result = result * baseNum;
+            }
+
+            return result;
+        } 
     }
 }
