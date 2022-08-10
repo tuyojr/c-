@@ -242,21 +242,88 @@ namespace cSharp
 
 
 
-            //13. While loops
+            ////13. While loops
 
-            int num = 1;
-            //the code keeps executing until the condition is false
-            while (num <= 10)
-            {
-                Console.WriteLine(num);
-                num++;
-            }
-            ////do...while loop
-            //do
+            //int num = 1;
+            ////the code keeps executing until the condition is false
+            //while (num <= 10)
             //{
             //    Console.WriteLine(num);
             //    num++;
-            //} while (num <= 10);
+            //}
+            //////do...while loop
+            ////do
+            ////{
+            ////    Console.WriteLine(num);
+            ////    num++;
+            ////} while (num <= 10);
+
+
+            //14. Building a guessing game.
+
+
+            string secretWord = "Wolf";
+            string guess = "";
+            //let's now give the player some number of tries
+            int guessCount = 0;
+            int guessLimit = 5;
+            bool guessLimitReached = false;
+
+
+            while (guess != secretWord && !guessLimitReached)
+            {
+                if (guessCount == 0 && guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the name of the animal that moves in a pack. (NB: You have 5 tries.)");
+                    Console.Write("Enter your answer: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                } else if (guessCount == 1 && guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the name of the animal that moves in a pack. (NB: You have 4 tries.)");
+                    Console.Write("Wrong! Enter your answer: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else if (guessCount == 2 && guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the name of the animal that moves in a pack. (NB: You have 3 tries.)");
+                    Console.Write("Wrong! Enter your answer: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else if (guessCount == 3 && guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the name of the animal that moves in a pack. (NB: You have 2 tries.)");
+                    Console.Write("Wrong! Enter your answer: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else if (guessCount == 4 && guessCount < guessLimit)
+                {
+                    Console.WriteLine("Guess the name of the animal that moves in a pack. (NB: You have 1 trial left!)");
+                    Console.Write("Wrong! Enter your answer: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    //when guessCount < guessLimit is false.
+                    //this is otherwise called a boolean flag
+                    guessLimitReached = true;
+                }
+            }
+
+            if (guessLimitReached)
+            {
+                Console.WriteLine("Oops, you did not get the animal! Also, you're out of guesses");
+            } else
+            {
+                Console.WriteLine("You guessed right!");
+            }
+
+            
+
 
 
 
