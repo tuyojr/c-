@@ -351,9 +351,29 @@ namespace cSharp
             //}
 
 
-            //16. Building an Exponent Method
+            ////16. Building an Exponent Method
 
-            Console.WriteLine(Pow(2, 3));
+            //Console.WriteLine(Pow(2, 3));
+
+
+            //17. 2D Arrays
+
+            int[,] twoDarr = {
+                { 1, 3 },
+                { 2, 4 }
+            };
+
+            /*
+            in a situation you dont know how many values you want to populate the array with
+            you can write it as:
+            */
+
+            //int[,] arr = new int[3, 4]; // new int[rows, columns]
+
+            Console.WriteLine(twoDarr[1,1]);
+
+
+
 
 
 
@@ -447,18 +467,18 @@ namespace cSharp
         //}
 
 
-        //16. Building an Exponent Method
+        ////16. Building an Exponent Method
 
-        static int Pow (int baseNum, int powNum)
-        {
-            int result = 1;
+        //static int Pow (int baseNum, int powNum)
+        //{
+        //    int result = 1;
 
-            for (int i = 0; i < powNum; i++)
-            {
-                result = result * baseNum;
-            }
+        //    for (int i = 0; i < powNum; i++)
+        //    {
+        //        result = result * baseNum;
+        //    }
 
-            return result;
-        } 
+        //    return result;
+        //} 
     }
 }
