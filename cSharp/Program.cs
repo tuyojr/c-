@@ -467,14 +467,30 @@ namespace cSharp
 
 
 
-            //23. Getters and Setters
+            ////23. Getters and Setters
 
-            //Ratings G, PG, PG-13, R, NR
+            ////Ratings G, PG, PG-13, R, NR
 
-            Movies movie1 = new Movies("Avengers: Infinity War", "Marvel", "G");
-            Movies movie2 = new Movies("Avengers: Endgame", "Marvel", "PG");
- 
-            Console.WriteLine(movie1.Rating);
+            //Movies movie1 = new Movies("Avengers: Infinity War", "Marvel", "G");
+            //Movies movie2 = new Movies("Avengers: Endgame", "Marvel", "PG");
+
+            //Console.WriteLine(movie1.Rating);
+
+
+
+            //24. Static Class Attributes
+
+            //new calls the constructor
+            Football team1 = new Football("P.S.G.", "Lionel Messi", 30);
+
+            Console.WriteLine(Football.numberOfPlayers);
+            Console.WriteLine(team1.getNumberOfPlayers());
+
+            Football team2 = new Football("Barcelona", "Pedri Gonzalez", 8);
+
+            Console.WriteLine(Football.numberOfPlayers);
+            Console.WriteLine(team2.getNumberOfPlayers());
+
 
 
 
