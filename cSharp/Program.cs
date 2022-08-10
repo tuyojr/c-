@@ -433,19 +433,37 @@ namespace cSharp
             //Console.WriteLine(book2.Title);
 
 
-            //21. Constructors
+            ////21. Constructors
 
-            Book book1 = new Book("2014 Forest Hills Drive", "J.Cole", 13); //this calls the constructor method
-            
-            Book book2 = new Book("From A Bird\'s Eye View", "Cordae", 14);
+            //Book book1 = new Book("2014 Forest Hills Drive", "J.Cole", 13); //this calls the constructor method
 
-            //You can modify the values
-            book1.Pages = 14;
+            //Book book2 = new Book("From A Bird\'s Eye View", "Cordae", 14);
 
-            Console.WriteLine(book2.Title);
-            Console.WriteLine(book1.Title);
-            Console.WriteLine(book1.Pages); //the number of pages changes from 13 to 14
+            ////You can modify the values
+            //book1.Pages = 14;
 
+            //Console.WriteLine(book2.Title);
+            //Console.WriteLine(book1.Title);
+            //Console.WriteLine(book1.Pages); //the number of pages changes from 13 to 14
+
+
+            //22. Object Methods
+
+            //we want to figure out if any of these students is on the honor roll
+            //we create an object method in our class
+
+            Student student1 = new Student("Alade", "Frontend Development.", 4.8);
+            Student student2 = new Student("Luchesse", "Data Analysis.", 2.8);
+            Student student3 = new Student("Sherlock", "Backend Development.", 4.9);
+            Student student4 = new Student("Donnie", "UI and UX.", 3.2);
+            Student student5 = new Student("Tuyo", "Cloud Engineering and Game Design.", 4.7);
+
+
+            Console.WriteLine(student1.Honors());
+            Console.WriteLine(student2.Honors());
+            Console.WriteLine(student3.Honors());
+            Console.WriteLine(student4.Honors());
+            Console.WriteLine(student5.Honors());
 
 
 
