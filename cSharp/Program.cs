@@ -383,35 +383,56 @@ namespace cSharp
             */
 
 
-            //19. Exception Handling
+            ////19. Exception Handling
 
-            try
-            {
-                Console.Write("Enter a number: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Enter a second number: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine(num1 / num2);
-            }
-            //catch (Exception e) //this takes an exception parameter and we call it 'e'.
-            ////you can also specify a specific exception, but it will not catch other tyoes of exception
+            //try
             //{
-            //    Console.WriteLine("Error: " + e.Message); //e.Message explains what went wrong
-            //}
-            catch (FormatException e)
-            {
-                Console.WriteLine("Error: " + e.Message);
-            }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("Error: " + e.Message);
-            }
-            //finally //any code here gets executed no matter what (optional)
-            //{
+            //    Console.Write("Enter a number: ");
+            //    int num1 = Convert.ToInt32(Console.ReadLine());
 
+            //    Console.Write("Enter a second number: ");
+            //    int num2 = Convert.ToInt32(Console.ReadLine());
+
+            //    Console.WriteLine(num1 / num2);
             //}
+            ////catch (Exception e) //this takes an exception parameter and we call it 'e'.
+            //////you can also specify a specific exception, but it will not catch other tyoes of exception
+            ////{
+            ////    Console.WriteLine("Error: " + e.Message); //e.Message explains what went wrong
+            ////}
+            //catch (FormatException e)
+            //{
+            //    Console.WriteLine("Error: " + e.Message);
+            //}
+            //catch (DivideByZeroException e)
+            //{
+            //    Console.WriteLine("Error: " + e.Message);
+            //}
+            ////finally //any code here gets executed no matter what (optional)
+            ////{
+
+            ////}
+            
+
+            //20. Classes and Objects
+
+            //an object is an instance of a class...
+            //object is creating the book inside our program
+            //you can create as many objects as you want
+
+            Book book1 = new Book();
+            book1.Title = "2014 Forest Hills Drive";
+            book1.Author = "J.Cole";
+            book1.Pages = 13;
+
+            Book book2 = new Book();
+            book2.Title = "From A Bird\'s Eye View";
+            book2.Author = "Cordae";
+            book2.Pages = 14;
+
+            Console.WriteLine(book2.Title);
+
+
 
 
 
