@@ -478,19 +478,27 @@ namespace cSharp
 
 
 
-            //24. Static Class Attributes
+            ////24. Static Class Attributes
 
-            //new calls the constructor
-            Football team1 = new Football("P.S.G.", "Lionel Messi", 30);
+            ////new calls the constructor
+            //Football team1 = new Football("P.S.G.", "Lionel Messi", 30);
 
-            Console.WriteLine(Football.numberOfPlayers);
-            Console.WriteLine(team1.getNumberOfPlayers());
+            //Console.WriteLine(Football.numberOfPlayers);
+            //Console.WriteLine(team1.getNumberOfPlayers());
 
-            Football team2 = new Football("Barcelona", "Pedri Gonzalez", 8);
+            //Football team2 = new Football("Barcelona", "Pedri Gonzalez", 8);
 
-            Console.WriteLine(Football.numberOfPlayers);
-            Console.WriteLine(team2.getNumberOfPlayers());
+            //Console.WriteLine(Football.numberOfPlayers);
+            //Console.WriteLine(team2.getNumberOfPlayers());
 
+
+            //25. Static Methods and Classes
+
+            //Static methods belong to the class. 
+
+            //Console.WriteLine(Math.Sqrt(36));
+
+            Tool.SayHi("Tuyo"); //Tool is the class, SayHi is the method
 
 
 
