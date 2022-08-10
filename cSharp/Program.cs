@@ -492,15 +492,23 @@ namespace cSharp
             //Console.WriteLine(team2.getNumberOfPlayers());
 
 
-            //25. Static Methods and Classes
+            ////25. Static Methods and Classes
 
-            //Static methods belong to the class. 
+            ////Static methods belong to the class. 
 
-            //Console.WriteLine(Math.Sqrt(36));
+            ////Console.WriteLine(Math.Sqrt(36));
 
-            Tool.SayHi("Tuyo"); //Tool is the class, SayHi is the method
+            //Tool.SayHi("Tuyo"); //Tool is the class, SayHi is the method
 
 
+
+            //26. Inheritance
+
+            Chef chef = new Chef();
+            chef.makeSpecialDish();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.makeSpecialDish();
 
 
 
