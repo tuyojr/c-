@@ -48,7 +48,7 @@ namespace cSharp
 
             ////3. Getting User Input
             ////Console.WriteLine(); prints a line of text and then goes to a new line
-            ////Console.ReaLine(); takes the line of text the user enters and saves it as a string
+            ////Console.ReadLine(); takes the line of text the user enters and saves it as a string
 
 
             //Console.Write("Enter your name: ");
@@ -248,15 +248,16 @@ namespace cSharp
             ////the code keeps executing until the condition is false
             //while (num <= 10)
             //{
-            //    Console.WriteLine(num);
+            //Console.WriteLine(num);
             //    num++;
             //}
-            //////do...while loop
-            ////do
-            ////{
-            ////    Console.WriteLine(num);
-            ////    num++;
-            ////} while (num <= 10);
+
+            ////do...while loop
+            //do
+            //{
+            //    Console.WriteLine(num);
+            //    num++;
+            //} while (num <= 10);
 
 
             ////14. Building a guessing game.
@@ -502,13 +503,72 @@ namespace cSharp
 
 
 
-            //26. Inheritance
+            ////26. Inheritance
 
-            Chef chef = new Chef();
-            chef.makeSpecialDish();
+            //Chef chef = new Chef();
+            //chef.makeSpecialDish();
 
-            ItalianChef italianChef = new ItalianChef();
-            italianChef.makeSpecialDish();
+            //ItalianChef italianChef = new ItalianChef();
+            //italianChef.makeSpecialDish();
+
+            //int[] i = new int[0];
+
+            //Console.WriteLine(i[0]); //output is IndexOutOfRangeException
+
+            //int[] arr = new int[10];
+            //Tool.ArrM(arr);
+
+            //Console.WriteLine(arr.Length); //output is 10.
+
+
+            //int i = 30;
+            //int j = 5 % 5;
+
+            //if (Convert.ToBoolean(Convert.ToInt32(i != j)))
+            //{
+            //    Console.WriteLine("if Clause executed");
+            //} else
+            //{
+            //    Console.WriteLine("else Clause executed");
+            //}
+            //Console.WriteLine("Entered Main Function"); //outputs this line and message in if statement
+
+
+            //int a = -2;
+            //++a;    //adds 1 to a (i.e 1 + a)
+
+            //Console.WriteLine(a);
+
+            //int a = 2, b = 3, c = 4;
+
+            //switch (a + b - c)
+            //{
+            //    case 0: case 2: case 4:
+            //        ++a; // a = 3
+            //        c += b; // c = 7
+            //        break;
+            //    case 1: case 3: case 5:
+            //        --a;  // a = 1
+            //        c -= b; // c = 1
+            //        break;
+            //    default:
+            //        a += b; // a = 5
+            //        break;
+            //}
+            //Console.WriteLine(a + "\n" + b + "\n" + c); // output is (1 3 1)
+
+
+            //int i = 1, j = 5;
+            
+            //do
+            //{
+            //    Console.WriteLine(i = i++ * j); 
+            //    //this first outputs 5 as the value of i, and then multiplies the new value (5) by the value of j.
+            //} while (i <= 10); 
+
+
+
+
 
 
 

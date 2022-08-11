@@ -9,9 +9,18 @@ namespace cSharp
     internal class Tool
     {
 
-        public static void SayHi(string name)
+        public static void SayHi(string name) 
         {
-            Console.WriteLine("Hey there " + name + "!" );
+
+            Console.WriteLine("Hey there " + name + "!");
+
+        }
+        public static void ArrM(int[] a)
+        {
+        
+            int[] b = new int[5];
+            a = b;
+
         }
 
 
